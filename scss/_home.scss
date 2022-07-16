@@ -1,0 +1,411 @@
+// BANNER
+.banner__full {
+    width: 100%;
+    max-width: 100%;
+    height: 640px;
+    background-image: url('../img/banner-full.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .banner {
+        &__info {
+            width: 100%;
+            max-width: 50.1rem;
+            padding-top: 25.8rem;
+            h1 {
+                color: $light-primary;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                color: $light-primary;
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+
+
+    @include responsive(480px) {
+        .banner {
+            &__info {
+                padding-top: 6rem;
+            }
+        }
+    }
+}
+
+// FEATURED
+.featured {
+    background-color: $light-secondary;
+    padding: 17.6rem 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__info {
+        width: 100%;
+        max-width: 33.8rem;
+        margin-right: 5.8rem;
+        
+        h2 {
+            line-height: 48px;
+            margin-bottom: 1rem;
+        }
+        span {
+            color: $brand-principal;
+        }
+        p {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: $dark-primary;
+        margin-bottom: 2.4rem;
+        }
+    }
+
+    @include responsive(991px) {
+        padding: 5rem 0 0;
+
+        .container {
+            flex-direction: column;
+        }
+
+        &__info {
+            text-align: center;
+            max-width: 100%;
+            margin-right: initial;
+        }
+    }
+}
+
+// MAQUINA DE CARTÃO
+.s-maquina-cartao {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5.6rem 1.5rem;
+
+        .info {
+            margin-left: 4rem;
+            > span {
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                text-transform: uppercase;
+                color: $brand-dark;
+                display: block;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-size: 3.2rem;
+                line-height: 4rem;
+                color: $dark-primary;
+                max-width: 39.0rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                color: $dark-primary;
+            }
+
+            .info-buttons {
+                display: flex;
+                flex-direction: column;
+                margin-top: 4.4rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-family: "Noto Sans",sans-serif;
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                    color: #00a868;
+                    margin-right: 1.3rem;
+                    margin-bottom: 1.6rem;
+                    width: max-content;
+                    transition: all .3s;
+                    &:hover {
+                        color: $brand-dark;
+                        text-decoration: underline;
+                    }
+                    
+                    svg {
+                        margin-left: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(768px) {
+        .container {
+            flex-direction: column;
+
+            .image {
+                order: 2;
+            }
+        }
+    }
+
+    @include responsive(468px) {
+        .container {
+            padding: 4rem 1.5rem;
+        }
+    }
+}
+
+// CONTA STONE
+.s-conta-stone {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5.6rem 1.5rem;
+        
+        .info {
+            margin-right: 4rem;
+            max-width: 45.6rem;
+            > span {
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                text-transform: uppercase;
+                color: $brand-dark;
+                display: block;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-size: 3.2rem;
+                line-height: 4rem;
+                color: $dark-primary;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-family: 'Noto Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                color: $dark-primary;
+            }
+
+            .info-buttons {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1.8rem;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-family: "Noto Sans",sans-serif;
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                    color: #00a868;
+                    margin-right: 1.3rem;
+                    margin-bottom: 1.8rem;
+                    width: max-content;
+                    transition: all .3s;
+                    &:hover {
+                        color: $brand-dark;
+                        text-decoration: underline;
+                    }
+                    
+                    svg {
+                        margin-left: 13px;
+                    }
+                }
+            }
+
+            .info-app-downloads {
+                display: flex;
+                width: 100%;
+                max-width: 297px;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    @include responsive(768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .info {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    @include responsive(468px) {
+        .container {
+            padding: 4rem 1.5rem;
+        }
+
+        .info-app-downloads {
+            margin-bottom: 1.8rem;
+        }
+    }
+}
+
+// SEJA STONE
+.s-seja-stone {
+    padding: 8rem 0;
+    background-color: $light-tertiary;
+
+    .container {
+        text-align: center;
+        h2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 4.8rem;
+            text-align: center;
+            color: $dark-primary;
+            max-width: 77.4rem;
+            margin: 0 auto;
+            margin-bottom: 2.4rem;
+            span {
+                color: $brand-principal;
+            }
+        }
+    }
+
+    .btn-container {
+        width: 100%;
+        max-width: 43.7rem;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    @include responsive(468px) {
+        padding: 4rem 0;
+        .container {
+            h2 {
+                font-size: 24px;
+                line-height: 34px;
+            }
+    
+            .btn-container {
+                flex-direction: column;
+
+                .btn-primary {
+                    margin-bottom: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+// INFOS
+.s-infos-rodape {
+    padding: 8rem 0;
+    background-color: $dark-secondary;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            margin-bottom: 0.4rem;
+            color: $light-primary;
+        }
+
+        p {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $light-primary;
+            margin-bottom: 1rem;
+        }
+
+        h4, p {
+            color: $light-primary;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            font-family: "Noto Sans",sans-serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #00a868;
+            margin-right: 1.3rem;
+            margin-bottom: 1.6rem;
+            width: max-content;
+            transition: all .3s;
+            &:hover {
+                color: $brand-dark;
+                text-decoration: underline;
+            }
+            
+            svg {
+                margin-left: 13px;
+            }
+        }
+
+        img {
+            margin-bottom: 0.6rem;
+        }
+    }
+
+    @include responsive(768px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+            div {
+                margin-bottom: 20px;
+            }
+            img {
+                margin: 0 auto;
+            }
+            a {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// FOOTER
+footer {
+    padding: 8rem 0;
+    background-color: $dark-primary;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .image {
+            margin-bottom: 2rem;
+        }
+    }
+    .social-footer {
+        width: 100%;
+        max-width: 23.0rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include responsive(468px) {
+        padding: 5rem 0;
+    }
+}

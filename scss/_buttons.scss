@@ -1,0 +1,37 @@
+.btn-primary {
+    background-color: $brand-light;
+    color: $dark-primary;
+    transition: all .3s;
+    &:hover {
+        background-color: $brand-principal;
+        box-shadow: 0 0 4px 2px rgb(66 236 154 / 50%);
+    }
+}
+
+.btn-secondary {
+    border: 2px solid #E8E8E8;
+    background-color: transparent;
+    color: $dark-primary;
+    transition: all .3s;
+    &:hover {
+        border: 2px solid $brand-light;
+        background: rgba(66, 236, 154, 0.25);
+        box-shadow: 0 0 4px 2px rgb(66 236 154 / 50%);
+    }
+
+    &.white {
+        background-color: $light-primary;
+    }
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    line-height: 5.6rem;
+    padding: 0 3.6rem;
+    border-radius: 90px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+}

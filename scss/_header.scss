@@ -1,0 +1,109 @@
+header {
+    height: 7.2rem;
+    background-color: $light-primary;
+    display: flex;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    
+        .header {
+            &__left {
+                @include flex(row, center, space-between);
+                width: 100%;
+                max-width: 42.3rem;
+                nav {
+                    ul {
+                        display: flex;
+                    }
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 4rem;
+                        }
+                        a {
+                            font-family: 'Noto Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            color: $dark-primary;
+                            transition: color .3s;
+                            &:hover {
+                                color: $brand-principal;
+                            }
+                        }
+                    }
+
+                }
+            }
+    
+            &__right {
+                display: flex;
+                align-items: center;
+                nav {
+                    display: flex;
+                    align-items: center;
+                    ul {
+                        display: flex;
+                    }
+                    li {
+                        margin-right: 40px;
+                        a {
+                            font-family: 'Noto Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: $dark-primary;
+                            transition: color .3s;
+                            &:hover {
+                                color: $brand-principal;
+                            }
+                        }
+                    }
+
+                    .btn-primary, .btn-secondary {
+                        margin-right: 16px;
+                        line-height: 48px;
+                        padding: 0 20px;
+                    }
+
+                    .btn-mobile {
+                        display: none;
+                    }
+                } 
+                
+            }
+        }
+    }
+
+    @include responsive(991px) {
+        .container {
+            .header {
+                &__left {
+                    nav {
+                        display: none;
+                    }
+                }
+                
+                &__right {
+                    nav {
+                        ul {
+                            display: none;
+                        }
+
+                        .btn-primary,
+                        .btn-secondary {
+                            display: none;
+                        }
+
+                        .btn-mobile {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
