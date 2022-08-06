@@ -4,7 +4,7 @@
     <br>
 </h1>
 <p align="center"> Visualize o projeto:
-    https://goharajunior.github.io/lp-stone/
+    https://lp-stone.netlify.app/
 </p>
 
 <div align="center" >
