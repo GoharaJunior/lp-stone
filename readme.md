@@ -4,7 +4,9 @@
     <br>
 </h1>
 <p align="center"> Visualize o projeto:
-    https://lp-stone.netlify.app/
+    <a href="https://lp-stone.netlify.app/" target="_blank" rel="noopener noreferrer">
+        Acessar página
+    </a>
 </p>
 
 <div align="center" >
