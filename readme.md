@@ -3,9 +3,10 @@
         <img src=".github/readme-title.png" alt="Logo King Host">
     <br>
 </h1>
-<p align="center"> Visualize o projeto:
+
+<p align="center">
     <a href="https://lp-stone.netlify.app/" target="_blank" rel="noopener noreferrer">
-        Acessar página
+        Clique aqui para visualizar o projeto
     </a>
 </p>
 
